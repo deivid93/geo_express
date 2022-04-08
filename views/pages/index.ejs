@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-8">
+                <div class="jumbotron">
+                    <h1>Esto es fabuloso</h1>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="well">
+                    <h1>Aqui va mi sidebar</h1>
+                    <ul> 
+                        <% mascotas.forEach(function(el,index){ %>
+                        <li> <%= el.name %> </li>
+                        <% }) %> 
+                    </ul> 
+                </div>
+            </div>    
+        </div>
+        
+    </main>
+</body>
+</html>
